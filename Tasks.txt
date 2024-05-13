@@ -1,0 +1,3 @@
+// Automate uid creation for user
+// move project start steps to a bash file
+// create a utility to format changeset error for printing
