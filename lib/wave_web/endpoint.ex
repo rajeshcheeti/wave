@@ -32,6 +32,12 @@ defmodule WaveWeb.Endpoint do
     plug Phoenix.Ecto.CheckRepoStatus, otp_app: :wave
   end
 
+  plug Corsica,
+    origins: "http://localhost:3000",
+    allow_headers: ~w(authorization content-type accept),
+    allow_methods: ~w(GET POST),
+    allow_credentials: true
+
   plug Phoenix.LiveDashboard.RequestLogger,
     param_key: "request_logger",
     cookie_key: "request_logger"

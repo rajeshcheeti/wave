@@ -33,7 +33,8 @@ defmodule Wave.MixProject do
   defp deps do
     [
       {:absinthe, "~> 1.7"},
-      {:absinthe_plug, "~> 1.5"}, 
+      {:absinthe_plug, "~> 1.5"},
+      {:corsica, "~> 2.0"},
       {:phoenix, "~> 1.7.3"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
